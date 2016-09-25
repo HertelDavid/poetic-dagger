@@ -1,18 +1,19 @@
 @lightest-brown: #FFC986;
-@light-brown: #E7AA60;
+@light-brown: rgba(158, 80, 33, 0.58);
 @brown: #594F4F;
 @dark-brown: #38230A;
 
 @lightest-blue: #6E90D4;
 @light-blue: #3F7093;
-@blue: #1B2C4E;
+@blue: #28518a;
 @dark-blue: #0C1527;
 
 @white: #FFF;
 @light-white: #fdfffb;
 @light-grey: #d4d4d4;
 @grey: #999;
-@darker-grey: #5c5c5c;
+@darker-grey: #474747;
+@darkest-grey: #262B31;
 
 /* RESET */
 
@@ -86,6 +87,7 @@ button{
     display: inline-block;
     position: relative;
     top: 5px;
+    padding-left: 8px;
   }
 
   .buttons-container ul{
@@ -163,17 +165,20 @@ button{
   .content-container{
     width: 60%;
     margin: 0px auto;
-    padding-top: 75px;
   }
 
   .content-container .left-column{
+    margin-top: 75px;
     float: left;
-    width: 70%;
+    width: 60%;
+    padding-right: 110px;
   }
 
   .content-container .right-column{
     float: left;
     width: 25%;
+    margin-top: -5px;
+    box-shadow: 0px 0px 5px 2px @grey;
   }
 }
 
@@ -256,13 +261,15 @@ button{
 
   .first-separator-section{
     height: 55%;
-    background: @lightest-blue;
+    background: @brown;
   }
 
   .second-separator-section{
     box-shadow: 0px 0px 4px 0px black;
     height: 45%;
-    background: @brown;
+    background: @lightest-blue;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -278,24 +285,52 @@ button{
 
   .poem-title{
     font-family: "Open Sans";
-    font-size: 36px;
-    color: @light-blue;
+    font-size: 42px;
+    color: @darkest-grey;
     display: inline-block;
-    padding-bottom: 10px;
-    padding-right: 65px;
+    padding-bottom: 2px;
+    padding-right: 95px;
     border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+    text-transform: uppercase;
   }
 
   .poem-content{
-    margin-top: 18px;
-    font-size: 22px;
+    margin-top: 25px;
+    font-size: 18px;
+    color: @darker-grey;
+    width: 80%;
+    line-height: 30px;
   }
 
   .poem-content .first-word{
-    font-size: 42px;
+    font-size: 40px;
     font-family: "Lobster";
-    color: @lightest-brown;
-    margin-right: 12px;
+    color: @darkest-grey;
+  }
+}
+
+.menu-container{
+  background: @brown;
+
+  .menu-wrapper{
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .organization-mode .label-container{
+    text-align: center;
+  }
+
+  .organization-mode label{
+    display: inline-block;
+    font-family: "Open Sans";
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @light-white;
+    margin-bottom: 25px;
   }
 }
 

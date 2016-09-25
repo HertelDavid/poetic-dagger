@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
         <script src="includes/js/pd.js"></script>
     </head>
     <body>
@@ -40,17 +42,21 @@
                     </div>
                 </div>
                 <div class="right-column menu-container">
-                    <div class="organization-mode-container">
-                        <div class="organization-mode">
-                            <label>Display by:</label>
-                            <select>
-                                <option value="Categories">Categories</option>
-                                <option value="Dates">Dates</option>
-                            </select>
+                    <div class="menu-wrapper">
+                        <div class="organization-mode-container">
+                            <div class="organization-mode">
+                                <div class="label-container">
+                                    <label>Display by</label>
+                                </div>
+                                <select>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Dates">Dates</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="menu">
+                        <div class="menu">
 
+                        </div>
                     </div>
                 </div>
             </div>

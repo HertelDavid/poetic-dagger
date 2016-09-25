@@ -142,7 +142,7 @@ button {
   width: 100%;
   background: #3f7093;
   padding: 9px 0px;
-  box-shadow: 0px 0px 5px 2px #5c5c5c;
+  box-shadow: 0px 0px 5px 2px #474747;
   position: fixed;
   z-index: 2;
 }
@@ -155,6 +155,7 @@ button {
   display: inline-block;
   position: relative;
   top: 5px;
+  padding-left: 8px;
 }
 .pd-header .buttons-container ul {
   list-style: none;
@@ -219,15 +220,18 @@ button {
 .content-wrapper .content-container {
   width: 60%;
   margin: 0px auto;
-  padding-top: 75px;
 }
 .content-wrapper .content-container .left-column {
+  margin-top: 75px;
   float: left;
-  width: 70%;
+  width: 60%;
+  padding-right: 110px;
 }
 .content-wrapper .content-container .right-column {
   float: left;
   width: 25%;
+  margin-top: -5px;
+  box-shadow: 0px 0px 5px 2px #999999;
 }
 /* End Content css */
 /* Splash css */
@@ -296,12 +300,14 @@ button {
 }
 .separator .first-separator-section {
   height: 55%;
-  background: #6e90d4;
+  background: #594f4f;
 }
 .separator .second-separator-section {
   box-shadow: 0px 0px 4px 0px black;
   height: 45%;
-  background: #594f4f;
+  background: #6e90d4;
+  position: relative;
+  z-index: 1;
 }
 /* End Separator css */
 /* Poem css */
@@ -312,21 +318,45 @@ button {
 }
 .content-container .poem-container .poem-title {
   font-family: "Open Sans";
-  font-size: 36px;
-  color: #3f7093;
+  font-size: 42px;
+  color: #262b31;
   display: inline-block;
-  padding-bottom: 10px;
-  padding-right: 65px;
+  padding-bottom: 2px;
+  padding-right: 95px;
   border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  text-transform: uppercase;
 }
 .content-container .poem-container .poem-content {
-  margin-top: 18px;
-  font-size: 22px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #474747;
+  width: 80%;
+  line-height: 30px;
 }
 .content-container .poem-container .poem-content .first-word {
-  font-size: 42px;
+  font-size: 40px;
   font-family: "Lobster";
-  color: #ffc986;
-  margin-right: 12px;
+  color: #262b31;
+}
+.menu-container {
+  background: #594f4f;
+}
+.menu-container .menu-wrapper {
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu-container .organization-mode .label-container {
+  text-align: center;
+}
+.menu-container .organization-mode label {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fdfffb;
+  margin-bottom: 25px;
 }
 /* End Poem css */
